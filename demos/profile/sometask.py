@@ -14,7 +14,7 @@ square = expensive_square
 #square = cheap_square
 
 def execute():
-    print "Squaring some numbers..."
+    print("Squaring some numbers...")
     x = np.arange((500000))
     y = square(x)
 
