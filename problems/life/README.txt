@@ -11,8 +11,6 @@ Contents
 
 - ``run_life.py``: animation script
 
-- ``run_life_gtk.py``: polished animation script
-
 - ``life.pyx``: Cython module with the life update rule (write this yourself!)
 
 - ``glider.png``: Image with the "glider" cell configuration

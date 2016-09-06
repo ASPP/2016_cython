@@ -53,7 +53,7 @@ def main():
 
         return img,
 
-    animation.FuncAnimation(fig, update_fig, interval=50, blit=True)
+    ani = animation.FuncAnimation(fig, update_fig, interval=50, blit=True)
     plt.show()
 
 
