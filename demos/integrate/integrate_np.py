@@ -13,4 +13,4 @@ def integrate_f(a, b, N):
 
 
 if __name__ == "__main__":
-    print integrate_f(0, 1, 10000)
+    print(integrate_f(0, 1, 10000))

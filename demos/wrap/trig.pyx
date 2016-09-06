@@ -6,5 +6,4 @@ cdef extern from "math.h":
     double M_PI
 
 def test_trig():
-    print 'Some trig functions from C:', cos(0), cos(M_PI)
-
+    print('Some trig functions from C:', cos(0), cos(M_PI))

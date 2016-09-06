@@ -7,6 +7,6 @@ y = stuff.do_compute(x)
 y2 = np.sin(x)
 
 if abs(y - y2).max() < 1e-10:
-    print "All OK!"
+    print("All OK!")
 else:
-    print "Something is wrong..."
+    print("Something is wrong...")

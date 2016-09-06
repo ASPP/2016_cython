@@ -41,7 +41,7 @@ def main():
     img = plt.imshow(state_1, interpolation='nearest',
                               cmap=plt.cm.gray)
 
-    print "Press Ctrl-C in the terminal to exit..."
+    print("Press Ctrl-C in the terminal to exit...")
 
     def update_fig(n):
         global state_1, state_2

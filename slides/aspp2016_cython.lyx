@@ -2106,14 +2106,12 @@ def test_trig():
 
 \begin_layout Plain Layout
 
-    print 'Some trig functions from C:', 
-\backslash
-
+    print('Some trig functions from C:',
 \end_layout
 
 \begin_layout Plain Layout
 
-          cos(0), cos(M_PI)
+          cos(0), cos(M_PI))
 \end_layout
 
 \end_inset
