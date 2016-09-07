@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/" />
 <title>Cython Problem-set</title>
 <style type="text/css">
 
@@ -16,8 +16,8 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
-  background: #CCC;
-  width: 600px;
+  background: #DDD;
+  width: 800px;
   padding-left: 1em;
 }
 
@@ -353,9 +353,11 @@ questions at any time.</p>
 <!-- Some exercises borrowed from Pauli Virtanen's 2011 lecture -->
 <div class="section" id="cythonizing">
 <h1><a class="toc-backref" href="#id1">Cythonizing</a></h1>
-<p>Implement a function in Cython that computes <tt class="docutils literal"><span class="pre">x**3</span> - 4x + 2</tt> on each element
-of a large floating point array.  Is this function faster than NumPy
-by default?  If so, can you explain why?</p>
+<p><strong>Description</strong>: In this exercise, you will practice implementing a simple
+expression in Cython, and applying it to a numpy array.</p>
+<p><strong>Assignment</strong>: Implement a function in Cython that computes <tt class="docutils literal"><span class="pre">x**3</span> - 4x + 2</tt>
+on each element of a large floating point array.  Is this function faster than
+NumPy by default?  If so, can you explain why?</p>
 <p>Benchmarking the NumPy code in IPython:</p>
 <pre class="literal-block">
 import numpy as np
@@ -366,9 +368,11 @@ x = np.linspace(0, 1, 10000)
 </div>
 <div class="section" id="wrapping-c">
 <h1><a class="toc-backref" href="#id2">Wrapping C</a></h1>
-<p>In the <tt class="docutils literal">wrapping</tt> directory is a simple C library computing the <tt class="docutils literal">sin</tt>
-elementwise for a Numpy array. The header <tt class="docutils literal">stuff.h</tt> defines a function with
-the signature:</p>
+<p><strong>Description</strong>: In this exercise, you will wrap an existing C library
+(provided) in Cython.</p>
+<p><strong>Assignment</strong>: In the <tt class="docutils literal">wrapping</tt> directory is a simple C library computing
+the <tt class="docutils literal">sin</tt> elementwise for a Numpy array. The header <tt class="docutils literal">stuff.h</tt> defines a
+function with the signature:</p>
 <pre class="literal-block">
 void compute(int n, double *input, double *output)
 </pre>
@@ -390,8 +394,11 @@ this will yield the equivalent of <tt class="docutils literal">double *</tt>, re
 <div class="section" id="conway-s-game-of-life">
 <h1><a class="toc-backref" href="#id3">Conway's Game of Life</a></h1>
 <!-- topics: Numpy interface, general Numpy usage -->
-<p>The Game of Life is a well-known cellular automaton that exhibits interesting
-behavior. It is defined on a grid of cells, where each cell has 8 neighbors:</p>
+<p><strong>Description</strong>:  In this exercise, you will practice manipulating
+two-dimensional arrays in-place.</p>
+<p><strong>Assignment</strong>: The Game of Life is a well-known cellular automaton that
+exhibits interesting behavior. It is defined on a grid of cells, where each
+cell has 8 neighbors:</p>
 <pre class="literal-block">
 .........
 .........
@@ -431,10 +438,11 @@ the center of a big grid, and see what happens!</p>
 </div>
 <div class="section" id="l-systems">
 <h1><a class="toc-backref" href="#id4">L-Systems</a></h1>
-<p>Implement an <a class="reference external" href="http://en.wikipedia.org/wiki/L-system">L-system</a> in Cython.
-Try, for example, to build a Sierpinski Triangle or the Dragon Curve.  If you
-want, you can first implement it in pure Python, and then add the type
-information later.</p>
+<p><strong>Description</strong>: In this exercise, you will practice accelerating operations
+on Python structures, such as lists and dictionaries.</p>
+<p><strong>Assignment</strong>: Implement an <a class="reference external" href="http://en.wikipedia.org/wiki/L-system">L-system</a> in Cython.  Try, for example, to
+build a Sierpinski Triangle or the Dragon Curve.  If you want, you can first
+implement it in pure Python, and then add the type information later.</p>
 <div class="section" id="hints">
 <h2><a class="toc-backref" href="#id5">Hints</a></h2>
 <blockquote>

@@ -18,9 +18,12 @@ questions at any time.
 Cythonizing
 -----------
 
-Implement a function in Cython that computes ``x**3 - 4x + 2`` on each element
-of a large floating point array.  Is this function faster than NumPy
-by default?  If so, can you explain why?
+**Description**: In this exercise, you will practice implementing a simple
+expression in Cython, and applying it to a numpy array.
+
+**Assignment**: Implement a function in Cython that computes ``x**3 - 4x + 2``
+on each element of a large floating point array.  Is this function faster than
+NumPy by default?  If so, can you explain why?
 
 Benchmarking the NumPy code in IPython::
 
@@ -34,9 +37,12 @@ Benchmarking the NumPy code in IPython::
 Wrapping C
 ----------
 
-In the ``wrapping`` directory is a simple C library computing the ``sin``
-elementwise for a Numpy array. The header ``stuff.h`` defines a function with
-the signature::
+**Description**: In this exercise, you will wrap an existing C library
+(provided) in Cython.
+
+**Assignment**: In the ``wrapping`` directory is a simple C library computing
+the ``sin`` elementwise for a Numpy array. The header ``stuff.h`` defines a
+function with the signature::
 
     void compute(int n, double *input, double *output)
 
@@ -64,8 +70,12 @@ Conway's Game of Life
 
 .. topics: Numpy interface, general Numpy usage
 
-The Game of Life is a well-known cellular automaton that exhibits interesting
-behavior. It is defined on a grid of cells, where each cell has 8 neighbors::
+**Description**:  In this exercise, you will practice manipulating
+two-dimensional arrays in-place.
+
+**Assignment**: The Game of Life is a well-known cellular automaton that
+exhibits interesting behavior. It is defined on a grid of cells, where each
+cell has 8 neighbors::
 
    .........
    .........
@@ -111,10 +121,14 @@ These examples come from the Game of Life simulator
 
 L-Systems
 ---------
-Implement an `L-system <http://en.wikipedia.org/wiki/L-system>`__ in Cython.
-Try, for example, to build a Sierpinski Triangle or the Dragon Curve.  If you
-want, you can first implement it in pure Python, and then add the type
-information later.
+
+**Description**: In this exercise, you will practice accelerating operations
+on Python structures, such as lists and dictionaries.
+
+**Assignment**: Implement an `L-system
+<http://en.wikipedia.org/wiki/L-system>`__ in Cython.  Try, for example, to
+build a Sierpinski Triangle or the Dragon Curve.  If you want, you can first
+implement it in pure Python, and then add the type information later.
 
 
 Hints
