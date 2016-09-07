@@ -1,7 +1,7 @@
 from numpy_basic import foo
 import numpy as np
 
-x = np.zeros((5, 7))
+x = np.arange(24.0).reshape((8, 3))
 print("Before:")
 print(x)
 
